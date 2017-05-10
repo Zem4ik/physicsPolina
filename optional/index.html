@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Общий случай</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="info">
+    <h3>Уравнения движения в общем виде:</h3>
+    <p>
+        𝑥(𝑡) = 𝑋(𝑡)cos⁡𝛺𝑡 + 𝑌(𝑡)sin𝛺𝑡<br>
+        𝑦(𝑡) = −𝑋(𝑡)sin⁡𝛺𝑡 + 𝑌(𝑡)cos𝛺𝑡,<br>
+        где<br>
+        𝑋 (𝑡) = 0<br>
+        Y(𝑡) = 𝑎cos𝜔⁡𝑡 , 𝑎 − амплитуда колебания<br>
+    </p>
+    <ul>
+        <li><img src="../resources/Foucault_pendulum_animated.gif"></li>
+        <li><img src="../resources/graph.png"></li>
+    </ul>
+</div>
+<div id="calculation">
+    <h3>Введите параметры исследуемой системы</h3>
+    <table>
+        <colgroup width="50%">
+        <tr>
+            <td style="padding:0">Длина нити маятника L, м</td>
+            <td><input id="length" type="text"></td>
+        </tr>
+        <tr>
+            <td>Нормальная составляющая угловой скорости вращени системы, рад/с^2</td>
+            <td><input id="angular velocity" type="text"></td>
+        </tr>
+    </table>
+    <canvas id="graph_of_a_function" style="height: 50%; width: 50%;"></canvas>
+</div>
+</body>
+</html>
