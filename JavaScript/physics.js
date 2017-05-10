@@ -4,7 +4,7 @@
  */
 var l = 100;
 var lambda0 = Math.PI / 3;
-var sigmaSystem = 0.075
+var sigmaSystem = 0.075;
 
 // Const
 var g0 = 9.8265;
