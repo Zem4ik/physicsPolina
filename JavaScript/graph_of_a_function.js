@@ -13,12 +13,24 @@ var height = c_canvas.scrollHeight;
 var points = [];
 var t = 0;
 
-var color = "#000";
-var thick = 1;
+var lengthElement = document.getElementById("length");
+var angularVelocityElement = document.getElementById("angular_velocity");
+var angularFrequencyElement = document.getElementById("angular_frequency");
+var timeSpeedingElement = document.getElementById("time_speeding");
+var maxPointsElement = document.getElementById("max_points");
 
+var length = parseFloat(lengthElement.value);
+var angularVelocity = parseFloat(angularVelocityElement.value);
+var angularFrequency;
+var timeSpeeding;
+var maxPoints;
+
+
+var graph_color = "#00f";
 
 function initDraw() {
     //grey lines
+    context.beginPath();
 
     for (var x = 0.5; x < width; x += 10) {
         context.moveTo(x, 0);
@@ -32,6 +44,9 @@ function initDraw() {
 
     context.strokeStyle = "#eee";
     context.stroke();
+
+
+    context.closePath();
 
 //axis
 
@@ -50,6 +65,7 @@ function initDraw() {
 
     context.strokeStyle = "#000";
     context.stroke();
+    context.closePath();
 }
 
 function tranformX(x) {
@@ -74,21 +90,45 @@ function draw() {
 
 }
 
+function clear() {
+    context.clearRect(0, 0, width, height);
+    initDraw();
+}
+
 function funGraph() {
-    context.beginPath();
+    if (length !== parseFloat(lengthElement.value) || angularVelocity !== parseFloat(angularVelocityElement.value) ||
+        timeSpeeding !== parseFloat(timeSpeedingElement.value) || maxPoints !== parseFloat(maxPointsElement.value)) {
+        length = parseFloat(lengthElement.value);
+        angularVelocity = parseFloat(angularVelocityElement.value);
+        timeSpeeding = parseFloat(timeSpeedingElement.value);
+        maxPoints = parseFloat(maxPointsElement.value);
+        clear();
+        points = [];
+        t = 0;
+    }
+
+    if (!isNaN(length)) {
+        angularFrequency = Math.sqrt(g0 / length);
+        angularFrequencyElement.textContent = angularFrequency;
+    } else {
+        angularFrequencyElement.textContent = "";
+    }
+
+    if (length === 0 || isNaN(timeSpeeding) || timeSpeeding === 0) return;
 
 
-    var newPoint = func(t += 0.1);
+    var newPoint = func(t += 0.01 * timeSpeeding);
     points.push({
         x: tranformX(newPoint.x),
         y: tranformY(newPoint.y)
     });
 
-    if (points.length > 700) {
-        context.clearRect(0, 0, width, height);
-        initDraw();
+    if (points.length > maxPoints) {
+        clear();
         points.shift();
     }
+
+    context.beginPath();
 
     context.moveTo(points[0].x, points[0].y);
 
@@ -96,8 +136,9 @@ function funGraph() {
         context.lineTo(points[i].x, points[i].y);
     }
 
-    context.strokeStyle = color;
+    context.strokeStyle = graph_color;
     context.stroke();
+    context.closePath();
 }
 
 draw();
