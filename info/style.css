@@ -1,0 +1,26 @@
+span, input{
+    font-size: 200%;
+}
+
+input {
+    float: right;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+img {
+    float: left;
+}
+
+a {
+    font-size: 150%;
+    float: right;
+}

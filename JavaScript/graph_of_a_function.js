@@ -12,22 +12,125 @@ var height = c_canvas.scrollHeight;
 
 var points = [];
 var t = 0;
+var zooming = 1000;
+var graph_color = "#00f";
+var funGraphId = NaN;
 
+//DOM elements
+//general elements
 var lengthElement = document.getElementById("length");
 var angularVelocityElement = document.getElementById("angular_velocity");
 var angularFrequencyElement = document.getElementById("angular_frequency");
 var timeSpeedingElement = document.getElementById("time_speeding");
 var maxPointsElement = document.getElementById("max_points");
+//earth element
+var latitudeElement = document.getElementById("latitude");
+var gravityElement = document.getElementById("gravity");
 
+//general variables
 var length = parseFloat(lengthElement.value);
 var angularVelocity = parseFloat(angularVelocityElement.value);
 var angularFrequency;
 var timeSpeeding;
 var maxPoints;
+//earth variable
+var latitude;
 
+//button "Start!" for Earth
+function validateEarth() {
+    length = parseFloat(lengthElement.value);
+    latitude = parseFloat(latitudeElement.value);
+    timeSpeeding = parseFloat(timeSpeedingElement.value);
+    maxPoints = parseFloat(maxPointsElement.value);
+    var validated = true;
+    if (isNaN(length) || length <= 0) {
+        alert("Введена неверная длина (должна быть больше 0)");
+        validated = false;
+    }
+    if (isNaN(latitude) || latitude < 0 || latitude > 90) {
+        alert("Введена неверная широта (должна быть в промежутке от 0 до 90)");
+        validated = false;
+    }
+    if (isNaN(timeSpeeding) || timeSpeeding < 10) {
+        alert("Введен неверный временной интервал между просчетом двух соседних точек (должен быть больше 10)");
+        validated = false;
+    }
+    if (isNaN(maxPoints) || maxPoints <= 0) {
+        alert("Введена неверное количество сохраняемых точек (должен быть больше 0)");
+        validated = false;
+    }
+    latitude = latitude * Math.PI / 180;
 
-var graph_color = "#00f";
+    // if all input values have been checked
+    if (validated) {
+        if (!isNaN(funGraphId)) clearInterval(funGraphId);
 
+        //calculating
+        timeSpeeding = timeSpeeding / 1000;
+
+        g = compute_g(latitude);
+        gravityElement.textContent = g;
+
+        angularFrequency = Math.sqrt(g / length);
+        angularFrequencyElement.textContent = angularFrequency;
+
+        angularVelocity = sigma0 * Math.sin(latitude);
+        angularVelocityElement.textContent = angularVelocity;
+
+        funGraphId = setInterval(funGraph, 10, funcEarth);
+    } else {
+        if (isNaN(funGraphId)) return;
+        clearInterval(funGraphId);
+        funGraphId = 0;
+        clear();
+        angularFrequencyElement.textContent = "";
+    }
+}
+
+//button "Start!" for optional
+function validateOptional() {
+    length = parseFloat(lengthElement.value);
+    angularVelocity = parseFloat(angularVelocityElement.value);
+    timeSpeeding = parseFloat(timeSpeedingElement.value);
+    maxPoints = parseFloat(maxPointsElement.value);
+    var validated = true;
+    if (isNaN(length) || length <= 0) {
+        alert("Введена неверная длина (должна быть больше 0)");
+        validated = false;
+    }
+    if (isNaN(angularVelocity)) {
+        alert("Введена неверная нормальная составляющая угловой скорости вращения системы");
+        validated = false;
+    }
+    if (isNaN(timeSpeeding) || timeSpeeding < 10) {
+        alert("Введен неверный временной интервал между просчетом двух соседних точек (должен быть больше 10)");
+        validated = false;
+    }
+    if (isNaN(maxPoints) || maxPoints <= 0) {
+        alert("Введена неверное количество сохраняемых точек (должен быть больше 0)");
+        validated = false;
+    }
+    // if all input values have been checked
+    if (validated) {
+        if (!isNaN(funGraphId)) clearInterval(funGraphId);
+
+        //calculating
+        timeSpeeding = timeSpeeding / 1000;
+
+        angularFrequency = Math.sqrt(g0 / length);
+        angularFrequencyElement.textContent = angularFrequency;
+
+        funGraphId = setInterval(funGraph, 10, funcOptional);
+    } else {
+        if (isNaN(funGraphId)) return;
+        clearInterval(funGraphId);
+        funGraphId = 0;
+        clear();
+        angularFrequencyElement.textContent = "";
+    }
+}
+
+//initial drawing (axis and grey lines)
 function initDraw() {
     //grey lines
     context.beginPath();
@@ -68,63 +171,52 @@ function initDraw() {
     context.closePath();
 }
 
-function tranformX(x) {
+//functions for getting x and y coordinates for canvas
+function transformX(x) {
     return x + width / 2;
 }
 
-function tranformY(y) {
+function transformY(y) {
     return -y + height / 2;
 }
 
-function func(t) {
+//optional function to draw
+function funcOptional(t) {
     return {
-        x: x(t) * 1000,
-        y: y(t) * 1000
+        x: x(t) * zooming,
+        y: y(t) * zooming
     }
 }
 
-function draw() {
-    initDraw();
-
-    setInterval(funGraph, 10);
-
+//earth function to draw
+function funcEarth(t) {
+    return {
+        x: x_z(t) * zooming,
+        y: y_z(t) * zooming
+    }
 }
 
+//clear and run initDraw()
 function clear() {
     context.clearRect(0, 0, width, height);
     initDraw();
 }
 
-function funGraph() {
-    if (length !== parseFloat(lengthElement.value) || angularVelocity !== parseFloat(angularVelocityElement.value) ||
-        timeSpeeding !== parseFloat(timeSpeedingElement.value) || maxPoints !== parseFloat(maxPointsElement.value)) {
-        length = parseFloat(lengthElement.value);
-        angularVelocity = parseFloat(angularVelocityElement.value);
-        timeSpeeding = parseFloat(timeSpeedingElement.value);
-        maxPoints = parseFloat(maxPointsElement.value);
-        clear();
-        points = [];
+//drawing function graph
+function funGraph(func) {
+    if (t + timeSpeeding < 0) {
         t = 0;
+        points = [];
     }
 
-    if (!isNaN(length)) {
-        angularFrequency = Math.sqrt(g0 / length);
-        angularFrequencyElement.textContent = angularFrequency;
-    } else {
-        angularFrequencyElement.textContent = "";
-    }
-
-    if (length === 0 || isNaN(timeSpeeding) || timeSpeeding === 0) return;
-
-
-    var newPoint = func(t += 0.01 * timeSpeeding);
+    var newPoint = func(t += timeSpeeding);
     points.push({
-        x: tranformX(newPoint.x),
-        y: tranformY(newPoint.y)
+        x: transformX(newPoint.x),
+        y: transformY(newPoint.y)
     });
 
-    if (points.length > maxPoints) {
-        clear();
+    clear();
+    while (points.length > maxPoints) {
         points.shift();
     }
 
@@ -141,5 +233,4 @@ function funGraph() {
     context.closePath();
 }
 
-draw();
-
+initDraw();
