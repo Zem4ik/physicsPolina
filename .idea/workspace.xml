@@ -2,13 +2,12 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/JavaScript/graph_of_a_function.js" />
-    <bookmark url="file://$PROJECT_DIR$/JavaScript/graph_of_a_function.js" line="212" />
+    <bookmark url="file://$PROJECT_DIR$/JavaScript/graph_of_a_function.js" line="223" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8f78c2e-c76e-434f-8491-3494258a756d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/Foucault_Arnold.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/earth/index.html" afterPath="$PROJECT_DIR$/earth/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaScript/graph_of_a_function.js" afterPath="$PROJECT_DIR$/JavaScript/graph_of_a_function.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,7 +25,7 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/optional/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
+            <state relative-caret-position="0">
               <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="32" selection-end-column="1" />
               <folding />
             </state>
@@ -36,7 +35,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/optional/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="392">
               <caret line="58" column="22" lean-forward="false" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#td#1;n#tr#1;n#colgroup#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -48,8 +47,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="65" lean-forward="true" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
+            <state relative-caret-position="54">
+              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -75,34 +74,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="graph_of_a_function.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="graph_of_a_function.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JavaScript/graph_of_a_function.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="71" column="39" lean-forward="false" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
+            <state relative-caret-position="349">
+              <caret line="126" column="80" lean-forward="false" selection-start-line="126" selection-start-column="80" selection-end-line="126" selection-end-column="80" />
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
                 <element signature="e#329#343#0" expanded="false" />
-                <element signature="e#4147#4319#0" expanded="false" />
+                <element signature="n#!!block;n#validateEarth#0" expanded="false" />
+                <element signature="e#1531#1629#0" expanded="false" />
+                <element signature="e#1688#1802#0" expanded="false" />
+                <element signature="e#1853#2000#0" expanded="false" />
+                <element signature="e#2045#2166#0" expanded="false" />
+                <element signature="e#2833#3005#0" expanded="false" />
+                <element signature="e#3354#3452#0" expanded="false" />
+                <element signature="e#3485#3612#0" expanded="false" />
+                <element signature="e#3663#3810#0" expanded="false" />
+                <element signature="e#3855#3976#0" expanded="false" />
+                <element signature="e#4377#4549#0" expanded="false" />
                 <element signature="n#!!block;n#initDraw#0" expanded="false" />
-                <element signature="e#4470#4542#0" expanded="false" />
-                <element signature="e#4587#4658#0" expanded="false" />
+                <element signature="e#4700#4772#0" expanded="false" />
+                <element signature="e#4817#4888#0" expanded="false" />
                 <element signature="n#!!block;n#transformX#0" expanded="false" />
                 <element signature="n#!!block;n#transformY#0" expanded="false" />
                 <element signature="n#!!block;n#funcOptional#0" expanded="false" />
-                <element signature="e#5488#5548#0" expanded="false" />
+                <element signature="e#5887#5947#0" expanded="false" />
                 <element signature="n#!!block;n#funcEarth#0" expanded="false" />
-                <element signature="e#5612#5676#0" expanded="false" />
+                <element signature="e#6011#6075#0" expanded="false" />
                 <element signature="n#!!block;n#clear#0" expanded="false" />
-                <element signature="e#5975#6051#0" expanded="false" />
-                <element signature="e#6106#6137#0" expanded="false" />
-                <element signature="e#6256#6313#0" expanded="false" />
+                <element signature="n#!!block;n#funGraph#0" expanded="false" />
+                <element signature="e#6269#6312#0" expanded="false" />
+                <element signature="e#6374#6450#0" expanded="false" />
+                <element signature="e#6505#6536#0" expanded="false" />
+                <element signature="e#6655#6712#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/earth/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="158">
@@ -118,7 +129,7 @@
         <entry file="file://$PROJECT_DIR$/JavaScript/physics.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+              <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
               <folding>
                 <element signature="e#14#55#0" expanded="false" />
                 <element signature="n#!!block;n#compute_g#0" expanded="false" />
@@ -161,13 +172,13 @@
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/JavaScript/physics.js" />
         <option value="$PROJECT_DIR$/earth/style.css" />
-        <option value="$PROJECT_DIR$/JavaScript/graph_of_a_function.js" />
         <option value="$PROJECT_DIR$/optional/style.css" />
         <option value="$PROJECT_DIR$/info/style.css" />
         <option value="$PROJECT_DIR$/optional/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/info/index.html" />
         <option value="$PROJECT_DIR$/earth/index.html" />
+        <option value="$PROJECT_DIR$/JavaScript/graph_of_a_function.js" />
       </list>
     </option>
   </component>
@@ -198,6 +209,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -283,7 +295,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -397,12 +408,13 @@
       <workItem from="1494401796887" duration="4513000" />
       <workItem from="1494436273617" duration="10711000" />
       <workItem from="1494751462143" duration="20706000" />
-      <workItem from="1494878615166" duration="941000" />
+      <workItem from="1494878615166" duration="1199000" />
+      <workItem from="1495111275328" duration="1483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59095000" />
+    <option name="totallyTimeSpent" value="60836000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -487,11 +499,114 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/optional/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="32" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optional/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="58" column="22" lean-forward="false" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#td#1;n#tr#1;n#colgroup#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="65" lean-forward="true" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/graph_of_a_function.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="71" column="39" lean-forward="false" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+            <element signature="e#329#343#0" expanded="false" />
+            <element signature="n#!!block;n#validateEarth#0" expanded="false" />
+            <element signature="e#1531#1629#0" expanded="false" />
+            <element signature="e#1688#1802#0" expanded="false" />
+            <element signature="e#1853#2000#0" expanded="false" />
+            <element signature="e#2045#2166#0" expanded="false" />
+            <element signature="e#2833#3005#0" expanded="false" />
+            <element signature="e#3354#3452#0" expanded="false" />
+            <element signature="e#3485#3612#0" expanded="false" />
+            <element signature="e#3663#3810#0" expanded="false" />
+            <element signature="e#3855#3976#0" expanded="false" />
+            <element signature="e#4377#4549#0" expanded="false" />
+            <element signature="n#!!block;n#initDraw#0" expanded="false" />
+            <element signature="e#4700#4772#0" expanded="false" />
+            <element signature="e#4817#4888#0" expanded="false" />
+            <element signature="n#!!block;n#transformX#0" expanded="false" />
+            <element signature="n#!!block;n#transformY#0" expanded="false" />
+            <element signature="n#!!block;n#funcOptional#0" expanded="false" />
+            <element signature="e#5887#5947#0" expanded="false" />
+            <element signature="n#!!block;n#funcEarth#0" expanded="false" />
+            <element signature="e#6011#6075#0" expanded="false" />
+            <element signature="n#!!block;n#clear#0" expanded="false" />
+            <element signature="n#!!block;n#funGraph#0" expanded="false" />
+            <element signature="e#6269#6312#0" expanded="false" />
+            <element signature="e#6374#6450#0" expanded="false" />
+            <element signature="e#6505#6536#0" expanded="false" />
+            <element signature="e#6655#6712#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/physics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+          <folding>
+            <element signature="e#14#55#0" expanded="false" />
+            <element signature="n#!!block;n#compute_g#0" expanded="false" />
+            <element signature="n#!!block;n#Y#0" expanded="false" />
+            <element signature="n#!!block;n#y_z#0" expanded="false" />
+            <element signature="n#!!block;n#y#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/earth/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#td#1;n#tr#4;n#colgroup#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/optional/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -541,20 +656,32 @@
           <folding>
             <element signature="e#0#39#0" expanded="false" />
             <element signature="e#329#343#0" expanded="false" />
-            <element signature="e#4147#4319#0" expanded="false" />
+            <element signature="n#!!block;n#validateEarth#0" expanded="false" />
+            <element signature="e#1531#1629#0" expanded="false" />
+            <element signature="e#1688#1802#0" expanded="false" />
+            <element signature="e#1853#2000#0" expanded="false" />
+            <element signature="e#2045#2166#0" expanded="false" />
+            <element signature="e#2833#3005#0" expanded="false" />
+            <element signature="e#3354#3452#0" expanded="false" />
+            <element signature="e#3485#3612#0" expanded="false" />
+            <element signature="e#3663#3810#0" expanded="false" />
+            <element signature="e#3855#3976#0" expanded="false" />
+            <element signature="e#4377#4549#0" expanded="false" />
             <element signature="n#!!block;n#initDraw#0" expanded="false" />
-            <element signature="e#4470#4542#0" expanded="false" />
-            <element signature="e#4587#4658#0" expanded="false" />
+            <element signature="e#4700#4772#0" expanded="false" />
+            <element signature="e#4817#4888#0" expanded="false" />
             <element signature="n#!!block;n#transformX#0" expanded="false" />
             <element signature="n#!!block;n#transformY#0" expanded="false" />
             <element signature="n#!!block;n#funcOptional#0" expanded="false" />
-            <element signature="e#5488#5548#0" expanded="false" />
+            <element signature="e#5887#5947#0" expanded="false" />
             <element signature="n#!!block;n#funcEarth#0" expanded="false" />
-            <element signature="e#5612#5676#0" expanded="false" />
+            <element signature="e#6011#6075#0" expanded="false" />
             <element signature="n#!!block;n#clear#0" expanded="false" />
-            <element signature="e#5975#6051#0" expanded="false" />
-            <element signature="e#6106#6137#0" expanded="false" />
-            <element signature="e#6256#6313#0" expanded="false" />
+            <element signature="n#!!block;n#funGraph#0" expanded="false" />
+            <element signature="e#6269#6312#0" expanded="false" />
+            <element signature="e#6374#6450#0" expanded="false" />
+            <element signature="e#6505#6536#0" expanded="false" />
+            <element signature="e#6655#6712#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -598,20 +725,32 @@
           <folding>
             <element signature="e#0#39#0" expanded="false" />
             <element signature="e#329#343#0" expanded="false" />
-            <element signature="e#4147#4319#0" expanded="false" />
+            <element signature="n#!!block;n#validateEarth#0" expanded="false" />
+            <element signature="e#1531#1629#0" expanded="false" />
+            <element signature="e#1688#1802#0" expanded="false" />
+            <element signature="e#1853#2000#0" expanded="false" />
+            <element signature="e#2045#2166#0" expanded="false" />
+            <element signature="e#2833#3005#0" expanded="false" />
+            <element signature="e#3354#3452#0" expanded="false" />
+            <element signature="e#3485#3612#0" expanded="false" />
+            <element signature="e#3663#3810#0" expanded="false" />
+            <element signature="e#3855#3976#0" expanded="false" />
+            <element signature="e#4377#4549#0" expanded="false" />
             <element signature="n#!!block;n#initDraw#0" expanded="false" />
-            <element signature="e#4470#4542#0" expanded="false" />
-            <element signature="e#4587#4658#0" expanded="false" />
+            <element signature="e#4700#4772#0" expanded="false" />
+            <element signature="e#4817#4888#0" expanded="false" />
             <element signature="n#!!block;n#transformX#0" expanded="false" />
             <element signature="n#!!block;n#transformY#0" expanded="false" />
             <element signature="n#!!block;n#funcOptional#0" expanded="false" />
-            <element signature="e#5488#5548#0" expanded="false" />
+            <element signature="e#5887#5947#0" expanded="false" />
             <element signature="n#!!block;n#funcEarth#0" expanded="false" />
-            <element signature="e#5612#5676#0" expanded="false" />
+            <element signature="e#6011#6075#0" expanded="false" />
             <element signature="n#!!block;n#clear#0" expanded="false" />
-            <element signature="e#5975#6051#0" expanded="false" />
-            <element signature="e#6106#6137#0" expanded="false" />
-            <element signature="e#6256#6313#0" expanded="false" />
+            <element signature="n#!!block;n#funGraph#0" expanded="false" />
+            <element signature="e#6269#6312#0" expanded="false" />
+            <element signature="e#6374#6450#0" expanded="false" />
+            <element signature="e#6505#6536#0" expanded="false" />
+            <element signature="e#6655#6712#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -665,20 +804,32 @@
           <folding>
             <element signature="e#0#39#0" expanded="false" />
             <element signature="e#329#343#0" expanded="false" />
-            <element signature="e#4147#4319#0" expanded="false" />
+            <element signature="n#!!block;n#validateEarth#0" expanded="false" />
+            <element signature="e#1531#1629#0" expanded="false" />
+            <element signature="e#1688#1802#0" expanded="false" />
+            <element signature="e#1853#2000#0" expanded="false" />
+            <element signature="e#2045#2166#0" expanded="false" />
+            <element signature="e#2833#3005#0" expanded="false" />
+            <element signature="e#3354#3452#0" expanded="false" />
+            <element signature="e#3485#3612#0" expanded="false" />
+            <element signature="e#3663#3810#0" expanded="false" />
+            <element signature="e#3855#3976#0" expanded="false" />
+            <element signature="e#4377#4549#0" expanded="false" />
             <element signature="n#!!block;n#initDraw#0" expanded="false" />
-            <element signature="e#4470#4542#0" expanded="false" />
-            <element signature="e#4587#4658#0" expanded="false" />
+            <element signature="e#4700#4772#0" expanded="false" />
+            <element signature="e#4817#4888#0" expanded="false" />
             <element signature="n#!!block;n#transformX#0" expanded="false" />
             <element signature="n#!!block;n#transformY#0" expanded="false" />
             <element signature="n#!!block;n#funcOptional#0" expanded="false" />
-            <element signature="e#5488#5548#0" expanded="false" />
+            <element signature="e#5887#5947#0" expanded="false" />
             <element signature="n#!!block;n#funcEarth#0" expanded="false" />
-            <element signature="e#5612#5676#0" expanded="false" />
+            <element signature="e#6011#6075#0" expanded="false" />
             <element signature="n#!!block;n#clear#0" expanded="false" />
-            <element signature="e#5975#6051#0" expanded="false" />
-            <element signature="e#6106#6137#0" expanded="false" />
-            <element signature="e#6256#6313#0" expanded="false" />
+            <element signature="n#!!block;n#funGraph#0" expanded="false" />
+            <element signature="e#6269#6312#0" expanded="false" />
+            <element signature="e#6374#6450#0" expanded="false" />
+            <element signature="e#6505#6536#0" expanded="false" />
+            <element signature="e#6655#6712#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -735,7 +886,7 @@
     <entry file="file://$PROJECT_DIR$/JavaScript/physics.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+          <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
           <folding>
             <element signature="e#14#55#0" expanded="false" />
             <element signature="n#!!block;n#compute_g#0" expanded="false" />
@@ -766,34 +917,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript/graph_of_a_function.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="71" column="39" lean-forward="false" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-            <element signature="e#329#343#0" expanded="false" />
-            <element signature="e#4147#4319#0" expanded="false" />
-            <element signature="n#!!block;n#initDraw#0" expanded="false" />
-            <element signature="e#4470#4542#0" expanded="false" />
-            <element signature="e#4587#4658#0" expanded="false" />
-            <element signature="n#!!block;n#transformX#0" expanded="false" />
-            <element signature="n#!!block;n#transformY#0" expanded="false" />
-            <element signature="n#!!block;n#funcOptional#0" expanded="false" />
-            <element signature="e#5488#5548#0" expanded="false" />
-            <element signature="n#!!block;n#funcEarth#0" expanded="false" />
-            <element signature="e#5612#5676#0" expanded="false" />
-            <element signature="n#!!block;n#clear#0" expanded="false" />
-            <element signature="e#5975#6051#0" expanded="false" />
-            <element signature="e#6106#6137#0" expanded="false" />
-            <element signature="e#6256#6313#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/optional/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
+        <state relative-caret-position="0">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="32" selection-end-column="1" />
           <folding />
         </state>
@@ -807,9 +933,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/earth/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#td#1;n#tr#4;n#colgroup#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="1266" column="15" lean-forward="true" selection-start-line="1266" selection-start-column="15" selection-end-line="1266" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/optional/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="392">
           <caret line="58" column="22" lean-forward="false" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#p#0;n#td#1;n#tr#1;n#colgroup#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -825,20 +977,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/JavaScript/graph_of_a_function.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="65" lean-forward="true" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/earth/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        <state relative-caret-position="349">
+          <caret line="126" column="80" lean-forward="false" selection-start-line="126" selection-start-column="80" selection-end-line="126" selection-end-column="80" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#td#1;n#tr#4;n#colgroup#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
+            <element signature="e#329#343#0" expanded="false" />
+            <element signature="n#!!block;n#validateEarth#0" expanded="false" />
+            <element signature="e#1531#1629#0" expanded="false" />
+            <element signature="e#1688#1802#0" expanded="false" />
+            <element signature="e#1853#2000#0" expanded="false" />
+            <element signature="e#2045#2166#0" expanded="false" />
+            <element signature="e#2833#3005#0" expanded="false" />
+            <element signature="e#3354#3452#0" expanded="false" />
+            <element signature="e#3485#3612#0" expanded="false" />
+            <element signature="e#3663#3810#0" expanded="false" />
+            <element signature="e#3855#3976#0" expanded="false" />
+            <element signature="e#4377#4549#0" expanded="false" />
+            <element signature="n#!!block;n#initDraw#0" expanded="false" />
+            <element signature="e#4700#4772#0" expanded="false" />
+            <element signature="e#4817#4888#0" expanded="false" />
+            <element signature="n#!!block;n#transformX#0" expanded="false" />
+            <element signature="n#!!block;n#transformY#0" expanded="false" />
+            <element signature="n#!!block;n#funcOptional#0" expanded="false" />
+            <element signature="e#5887#5947#0" expanded="false" />
+            <element signature="n#!!block;n#funcEarth#0" expanded="false" />
+            <element signature="e#6011#6075#0" expanded="false" />
+            <element signature="n#!!block;n#clear#0" expanded="false" />
+            <element signature="n#!!block;n#funGraph#0" expanded="false" />
+            <element signature="e#6269#6312#0" expanded="false" />
+            <element signature="e#6374#6450#0" expanded="false" />
+            <element signature="e#6505#6536#0" expanded="false" />
+            <element signature="e#6655#6712#0" expanded="false" />
           </folding>
         </state>
       </provider>

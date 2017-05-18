@@ -36,6 +36,12 @@ var maxPoints;
 //earth variable
 var latitude;
 
+//formatting number to show it
+function numberFormatting(number) {
+    if (number < 0.0001) return number.toPrecision(1);
+    return number.toPrecision(5)
+}
+
 //button "Start!" for Earth
 function validateEarth() {
     length = parseFloat(lengthElement.value);
@@ -69,13 +75,13 @@ function validateEarth() {
         timeSpeeding = timeSpeeding / 1000;
 
         g = compute_g(latitude);
-        gravityElement.textContent = g;
+        gravityElement.textContent = numberFormatting(g);
 
         angularFrequency = Math.sqrt(g / length);
-        angularFrequencyElement.textContent = angularFrequency;
+        angularFrequencyElement.textContent = numberFormatting(angularFrequency);
 
         angularVelocity = sigma0 * Math.sin(latitude);
-        angularVelocityElement.textContent = angularVelocity;
+        angularVelocityElement.textContent = numberFormatting(angularVelocity);
 
         funGraphId = setInterval(funGraph, 10, funcEarth);
     } else {
@@ -118,7 +124,7 @@ function validateOptional() {
         timeSpeeding = timeSpeeding / 1000;
 
         angularFrequency = Math.sqrt(g0 / length);
-        angularFrequencyElement.textContent = angularFrequency;
+        angularFrequencyElement.textContent = numberFormatting(angularFrequency);
 
         funGraphId = setInterval(funGraph, 10, funcOptional);
     } else {
@@ -165,6 +171,11 @@ function initDraw() {
     context.lineTo(width / 2 - 5, 15);
     context.moveTo(width / 2, 0);
     context.lineTo(width / 2 + 5, 15);
+
+    context.font = "18px bold";
+    context.textBaseline = "top";
+    context.fillText("x", width / 2 - 18, 0);
+    context.fillText("y", width - 15, height / 2 - 25);
 
     context.strokeStyle = "#000";
     context.stroke();
